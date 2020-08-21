@@ -1,0 +1,24 @@
+version: '3'
+services:
+  web:
+    stdin_open: true
+    build:
+      context: .
+      dockerfile: DockerFile.dev
+    ports:
+      - "3000:3000"
+    volumes:
+      # use node_mod from container
+      - /app/node_modules
+      # mapping all other files to container Working dir
+      - .:/app
+  tests:
+    stdin_open: true
+    build:
+      context: .
+      dockerfile: DockerFile.dev
+    volumes:
+      - /app/node_modules
+      - .:/app
+    # overriding "npm run start" for this container
+    command: ["npm","run","test"]
