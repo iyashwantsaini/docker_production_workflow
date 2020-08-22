@@ -11,5 +11,9 @@ RUN npm run build
 
 # nginx server phase
 FROM nginx
+
+# for exposing port in aws
+# EXPOSE 80
+
 COPY --from=builder /app/build /usr/share/nginx/html
 # nginx is started by image automatically
