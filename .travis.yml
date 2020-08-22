@@ -1,5 +1,6 @@
 # we need superuser permissions
 sudo: required
+language: generic
 # we need docker
 services:
   - docker
@@ -12,5 +13,5 @@ before_install:
 script:
 # but this never exits itself
 # add coverage to end it
-  - docker run meyash/docker_production_workflow npm run test -- --coverage
+  - docker run -e CI=true meyash/docker_production_workflow npm run test -- --coverage
   
