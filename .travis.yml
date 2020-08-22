@@ -1,0 +1,15 @@
+# we need superuser permissions
+sudo: required
+# we need docker
+services:
+  - docker
+
+# build docker image
+before_install:
+  - docker build -t meyash/docker_production_workflow -f DockerFile.dev .
+
+# commands for running tests
+script:
+# but this never exits itself
+# add coverage to end it
+  - docker run meyash/docker_production_workflow npm run test -- --coverage

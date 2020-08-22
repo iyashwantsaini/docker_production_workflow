@@ -2,7 +2,7 @@
 
 ## Phases
 
-- Dev
+- DEV
   - develop, add ,test
   - DockerFile.dev
     - for development
@@ -22,9 +22,9 @@
         ```
         > docker exec -it container_id sh 
         ```
-- Test
+- TEST
   - travis testing
-- Prod
+- PROD
   - Deploy to cloud services like Elastic Beanstalk
   - DockerFile
     - for production
@@ -40,6 +40,13 @@
   - Use nginx  
   - Copy over result of npm run build
   - Start nginx
+
+## travis-ci
+
+- tell travis we need docker
+- build img using DockerFile.dev
+- tell travis to run test suite
+- tell travis to deploy code to aws
 
 ## Mapping
 
