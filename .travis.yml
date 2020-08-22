@@ -13,3 +13,4 @@ script:
 # but this never exits itself
 # add coverage to end it
   - docker run meyash/docker_production_workflow npm run test -- --coverage
+  
