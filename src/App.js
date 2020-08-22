@@ -10,6 +10,9 @@ function App() {
         <p>
           Docker Producion Grade Workflow
         </p>
+        <p>
+          Instructions Included
+        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
