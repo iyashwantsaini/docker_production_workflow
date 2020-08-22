@@ -14,4 +14,30 @@ script:
 # but this never exits itself
 # add coverage to end it
   - docker run -e CI=true meyash/docker_production_workflow npm run test -- --coverage
-  
+
+# deploy to aws
+# deploy:
+#   provider: elasticbeanstalk
+#   # get this from the url for your aws app
+#   # http://something-env.eba-something.us-east-1.elasticbeanstalk.com/
+#   region: "us-east-1"
+#   # name for your was app
+#   app: "docker-workflow"
+#   # env name - get from aws dashboard
+#   env: "DockerWorkflow-env"
+#   # get from S3 app in aws services
+#   bucket_name: elasticbeanstalk-us-east-1-something
+#   # use same as app name
+#   bucket_path: "docker-workflow"
+#   # only deplot when master branch is updated
+#   on:
+#     branch: master
+#   access_key_id: $AWS_ACCESS_KEY
+#   secret_access_key:
+#     secure: "$AWS_SECRET_KEY"
+
+
+# ADD AWS_ACCESS_KEY, AWS_SECRET_KEY from aws to travis ci env variables
+
+# iam services for user api keys
+# create new user, select both programmatic access, aws mgmt console ,Add current policies > AWSElasticBeanstalkFullAccess

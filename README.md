@@ -48,6 +48,10 @@
 - tell travis to run test suite
 - tell travis to deploy code to aws
 
+## Elastic Beanstalk
+
+- create web server env for docker platform
+
 ## Mapping
 
 - Docker Volumes
