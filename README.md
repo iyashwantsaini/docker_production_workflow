@@ -15,6 +15,13 @@
         ```
         > docker run -it -p 3000:3000 image_id
         ```
+      - To pass args in container
+        ```
+        > docker attach container_id
+        ```
+        ```
+        > docker exec -it container_id sh 
+        ```
 - Test
   - travis testing
 - Prod
@@ -25,6 +32,14 @@
         > docker build .
         ```
 
+## nginx
+
+- nginx is a web server to serve our files
+- We'll use a multistep build process
+  - Run npm build
+  - Use nginx  
+  - Copy over result of npm run build
+  - Start nginx
 
 ## Mapping
 
