@@ -1,4 +1,14 @@
-# Docker Production Grade Workflow
+
+<h1 align="center">
+  <br>
+  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://www.docker.com/sites/default/files/d8/styles/role_icon/public/2019-07/horizontal-logo-monochromatic-white.png?itok=SBlK2TGU
+" alt="Project_Logo" width="200"></a>
+  <br>
+  Docker Production Grade Workflow
+  <br>
+</h1>
+
+<h4 align="center">Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels.</h4>
 
 ## Phases
 
@@ -6,31 +16,31 @@
   - develop, add ,test
   - DockerFile.dev
     - for development
-      - First remove node_modules from root
-      - This will make build faster
-        ```
-        > docker build -f DockerFile.dev .
-        ```
-      - Now Run Server
-        ```
-        > docker run -it -p 3000:3000 image_id
-        ```
-      - To pass args in container
-        ```
-        > docker attach container_id
-        ```
-        ```
-        > docker exec -it container_id sh 
-        ```
+    - first remove node_modules from root
+    - this will make build faster
+      ```
+      > docker build -f DockerFile.dev .
+      ```
+    - now Run Server
+      ```
+      > docker run -it -p 3000:3000 image_id
+      ```
+    - to pass args in container
+      ```
+      > docker attach container_id
+      ```
+      ```
+      > docker exec -it container_id sh 
+      ```
 - TEST
   - travis testing
 - PROD
   - Deploy to cloud services like Elastic Beanstalk
   - DockerFile
     - for production
-        ```
-        > docker build .
-        ```
+    ```
+    > docker build .
+    ```
 
 ## nginx
 
@@ -125,3 +135,20 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## License
+
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+
+By [Yashwant](https://github.com/meyash)
+
+## Contributors
+
+[<img src="https://avatars3.githubusercontent.com/u/21121279?s=460&u=f0450278b2b569c4443ab8ee03f9dff7015da5bf&v=4" width="100px;" alt="toofff"/><br />
+
+<a href="https://meyash.xyz/" style="margin-right:30px;"><img src="https://meyash.xyz/assets/icons/siteicon.png" width="25"></a>
+<a href="https://meyash.xyz/resume.pdf" style="margin-right:30px;"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/libreoffice.svg" width="25"></a> 
+<a href="https://www.linkedin.com/in/meyash21/" style="margin-right:30px;"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" width="25"></a>
+<a href="https://twitter.com/meyash21" style="margin-right:30px;"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" width="25"></a>
+<a href="https://www.instagram.com/meyash21/" style="margin-right:30px;"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" width="25"></a>
+<a href="https://www.codechef.com/users/meyash21" style="margin-right:30px;"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/codechef.svg" width="25"></a>  
