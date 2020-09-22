@@ -1,8 +1,7 @@
 
 <h1 align="center">
   <br>
-  <a href=""><img src="logo.png
-" alt="Project_Logo" width="200"></a>
+  <a href=""><img src="https://raw.githubusercontent.com/meyash/docker_production_workflow/master/logo.png" alt="logo" width="200"></a>
   <br>
   Docker Production Grade Workflow
   <br>
